@@ -1,0 +1,12 @@
+// Prefix
+@mixin prefix($whatcss, $prefixes: ()) {
+    @each $property, $value in $whatcss {
+        @each $prefix in $prefixes {
+            #{'-' + $prefix + '-' + $property} : $value;
+
+        }
+
+        // non-prefix (basic property)
+        #{$property} : $value;
+    }
+} 

@@ -1,0 +1,9 @@
+.index {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    div.area {
+        border: 1px solid #fff;
+        flex: 1;
+    }
+}
